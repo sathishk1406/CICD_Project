@@ -26,7 +26,4 @@ node{
    stage('Docker deployment'){
    sh 'docker run -d -p 8090:8080 --name tomcattest sathish1997/myweb:0.0.2' 
    }
-   stage('Monitoring stage'){
-   sh 'docker-compose up -d' 
-   }
 }
